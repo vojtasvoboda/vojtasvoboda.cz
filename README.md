@@ -25,10 +25,10 @@ Example file:
 
 ```
 APP_ENV=dev
-DATABASE_NAME=fortissimo
+DATABASE_NAME=vojtasvoboda
 DATABASE_USER=root
-DATABASE_PASSWORD=
-ENCRYPTION_KEY=D04IKlhSqSaTxW7aJnY5tOpT4Nwd1UrD
+DATABASE_PASSWORD=root
+ENCRYPTION_KEY=your-generated-32byte-string
 ENCRYPTION_CIPHER=rijndael-128
 BASE_URL=http://localhost:8000
 ```

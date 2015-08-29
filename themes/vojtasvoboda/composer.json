@@ -1,24 +1,11 @@
 {
-    "name": "october/demo-theme",
-    "type": "october-theme",
-    "description": "Demo OctoberCMS theme",
-    "keywords": ["october", "cms", "demo", "theme"],
+    "name": "vojtasvoboda/vojtasvoboda.cz-theme",
+    "type": "Vojtasvoboda.cz theme",
+    "description": "Vojtasvoboda.cz theme",
+    "keywords": ["vojtasvoboda", "theme"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Alexey Bobkov",
-            "email": "aleksey.bobkov@gmail.com",
-            "role": "Co-founder"
-        },
-        {
-            "name": "Samuel Georges",
-            "email": "daftspunky@gmail.com",
-            "role": "Co-founder"
-        }
-    ],
     "require": {
-        "php": ">=5.4",
-        "composer/installers": "~1.0"
+        "php": ">=5.4"
     },
     "extra": {
         "branch-alias": {

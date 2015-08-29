@@ -1,0 +1,69 @@
+html {
+    background-color: $color-dark;
+    overflow-y: scroll;
+}
+
+body {
+    font-size: 14px;
+    font-family: $font-family-base;
+
+    @media #{$screen-md-up} {
+        font-size: 17px;
+    }
+}
+
+h1, h2, h3 {
+    color: $brand-primary;
+    text-transform: uppercase;
+    font-family: $font-family-base;
+}
+
+h1 {
+    margin: 0 0 1.2rem 0;
+}
+
+h2 {
+    padding-top: 0.5rem;
+    margin: 0 0 1rem 0;
+}
+
+h3 {
+    margin: 0 0 1rem 0;
+}
+
+p {
+    margin-bottom: 1.5em;
+    line-height: $line-height-computed;
+}
+
+a {
+    text-decoration: underline;
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+address {
+    margin-bottom: 1.5rem;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    margin: 15px 0;
+    line-height: 0;
+}
+
+input[type=text] {
+    border: 2px solid #ebebeb;
+    padding: 8px;
+}
+
+input[type=submit], .button {
+    color: #fff;
+    background-color: #d5aa5b;
+    text-transform: uppercase;
+    padding: 8px;
+    border: 2px solid #d5aa5b;
+}
