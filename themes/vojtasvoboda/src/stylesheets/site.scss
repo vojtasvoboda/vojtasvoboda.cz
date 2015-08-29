@@ -22,11 +22,11 @@
 @import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/type";
 @import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/code";
 @import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-@import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+//@import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/tables";
 //@import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 //@import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 // Components
-//@import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
 //@import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
 //@import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
 //@import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
@@ -63,13 +63,3 @@
 //---
 
 @import "type";
-
-//---
-
-@import "modules/header";
-@import "modules/footer";
-@import "modules/content";
-
-//---
-
-@import "dev";

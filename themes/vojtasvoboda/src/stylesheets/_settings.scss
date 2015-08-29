@@ -9,15 +9,6 @@ $vendor-root: '/themes/vojtasvoboda/assets/vendor';
 // Images
 $img-root: '/themes/vojtasvoboda/assets/images';
 
-// Fonts
-$fonts-root: '/themes/vojtasvoboda/assets/fonts';
-
-// Family
-//$font-copperplate: 'Copperplate-Lig';
-//$font-copperplate-bold: 'Copperplate-Bol';
-//$font-copperplate-letter-spacing: 0.08em;
-//$font-copperplate-letter-normal-spacing: 0.08em;
-
 // Section
 $section-horizontal-spacing: 4rem;
 $section-vertical-spacing: 6rem;
@@ -27,7 +18,6 @@ $section-odd-bg-color: #F2F2F2;
 // Colors
 $text-light-color: #FFFFFF;
 $color-dark: #060606;
-$heading-wire-color: #191919;
 
 // Bootstrap
 // --------------------------------------------------
@@ -44,7 +34,7 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #CEAD74;
+$brand-primary:         #398FD2;
 $brand-primary-light:   #FFFFFF;
 $brand-primary-dark:    #060606;
 $brand-success:         #5cb85c !default;
@@ -86,15 +76,15 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-serif-bold:  Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-serif !default;
+$font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          17px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
 $font-size-h1:            floor(($font-size-base * 2)) !default; // ~28px
-$font-size-h2:            floor(($font-size-base * 1.8)) !default; // ~24px
-$font-size-h3:            ceil(($font-size-base * 1.4)) !default; // ~20px
+$font-size-h2:            floor(($font-size-base * 1.6)) !default; // ~24px
+$font-size-h3:            ceil(($font-size-base * 1.3)) !default; // ~20px
 $font-size-h4:            ceil(($font-size-base * 1)) !default; // ~17px
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px

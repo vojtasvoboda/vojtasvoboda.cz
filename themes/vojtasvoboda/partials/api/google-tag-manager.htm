@@ -1,15 +1,6 @@
-==
-<?
-function onStart()
-{
-    $this['dev_mode'] = Config::get('site.dev.enabled');
-    $this['gtm_id'] = Config::get('hoko.site::config.gtm.id');
-}
-?>
-==
 <!-- <GOOGLE_TAG_MANAGER> -->
 <noscript>
-    <iframe src="//www.googletagmanager.com/ns.html?id={{ gtm_id }}"
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-XXXYYY"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <script>(function (w, d, s, l, i) {
@@ -22,5 +13,5 @@ function onStart()
     j.async = true;
     j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
     f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', '{{ gtm_id }}');</script>
+})(window, document, 'script', 'dataLayer', 'GTM-XXXYYY');</script>
 <!-- </GOOGLE_TAG_MANAGER> -->

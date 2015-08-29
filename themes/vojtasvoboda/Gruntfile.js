@@ -56,11 +56,11 @@ module.exports = function (grunt) {
 
                     // Bootstrap
                     // '<%= dirs.public_vendor %>/bootstrap-sass/assets/javascripts/bootstrap/button.js',
-                    // '<%= dirs.public_vendor %>/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+                    '<%= dirs.public_vendor %>/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
                     // '<%= dirs.public_vendor %>/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
                     // '<%= dirs.public_vendor %>/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
                     // '<%= dirs.public_vendor %>/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
-                    // '<%= dirs.public_vendor %>/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+                    '<%= dirs.public_vendor %>/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
                     // '<%= dirs.public_vendor %>/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
 
                     // Modernizr

@@ -22,21 +22,21 @@ function onStart()
     <base href="{{ url_base }}">
 </head>
 
-<body ng-controller="SiteController">
+<body>
 
-{% partial 'api/google-tag-manager' %}
+    {% partial 'api/google-tag-manager' %}
 
-<div class="container main-content">
-    <div class="row content-text">
-        {% page %}
+    <div class="container main-content">
+        <div class="row content-text">
+            {% page %}
+        </div>
     </div>
-</div>
 
-<script src="{{ 'assets/vendor/modernizr/modernizr.js' | theme }}"></script>
-<script src="{{ 'assets/javascript/site.vendor.js' | theme }}"></script>
-<script src="{{ 'assets/javascript/site.js' | theme }}"></script>
-{% scripts %}
-{% framework extras %}
+    <script src="{{ 'assets/vendor/modernizr/modernizr.js' | theme }}"></script>
+    <script src="{{ 'assets/javascript/site.vendor.js' | theme }}"></script>
+    <script src="{{ 'assets/javascript/site.js' | theme }}"></script>
+    {% scripts %}
+    {% framework extras %}
 
 </body>
 

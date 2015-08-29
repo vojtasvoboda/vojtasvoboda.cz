@@ -1,69 +1,58 @@
 html {
-    background-color: $color-dark;
     overflow-y: scroll;
 }
 
-body {
+.main-content {
+    padding: 0 25px;
     font-size: 14px;
-    font-family: $font-family-base;
 
-    @media #{$screen-md-up} {
-        font-size: 17px;
+    @media #{$screen-sm-up} {
+        width: 785px;
+        font-size: 15px;
+        background-color: #fafafa;
+        padding: 0 60px;
     }
-}
 
-h1, h2, h3 {
-    color: $brand-primary;
-    text-transform: uppercase;
-    font-family: $font-family-base;
-}
-
-h1 {
-    margin: 0 0 1.2rem 0;
-}
-
-h2 {
-    padding-top: 0.5rem;
-    margin: 0 0 1rem 0;
-}
-
-h3 {
-    margin: 0 0 1rem 0;
-}
-
-p {
-    margin-bottom: 1.5em;
-    line-height: $line-height-computed;
-}
-
-a {
-    text-decoration: underline;
-
-    &:focus {
-        outline: none !important;
+    h1 {
+        @media #{$screen-sm-up} {
+            margin-bottom: 26px;
+        }
     }
-}
 
-address {
-    margin-bottom: 1.5rem;
-}
+    h2 {
+        color: #4a4a4a;
 
-hr {
-    width: 100%;
-    height: 1px;
-    margin: 15px 0;
-    line-height: 0;
-}
+        @media #{$screen-sm-up} {
+            margin-top: 34px;
+        }
+    }
 
-input[type=text] {
-    border: 2px solid #ebebeb;
-    padding: 8px;
-}
+    h3 {
+        color: #666;
 
-input[type=submit], .button {
-    color: #fff;
-    background-color: #d5aa5b;
-    text-transform: uppercase;
-    padding: 8px;
-    border: 2px solid #d5aa5b;
+        @media #{$screen-sm-up} {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+    }
+
+    p {
+        @media #{$screen-sm-up} {
+            margin: 0 10px 15px;
+        }
+    }
+
+    .collapse, .collapsing {
+        padding: 20px;
+        background-color: #eaeaea;
+        border: 1px solid #ccc;
+    }
+
+    .additional-info {
+        font-size: 12px;
+
+        @media #{$screen-sm-up} {
+            font-size: 13px;
+        }
+    }
 }
