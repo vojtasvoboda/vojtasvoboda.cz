@@ -1,4 +1,4 @@
-description = "Výchozí layout"
+description = "Default layout"
 ==
 <?php
 function onStart()
@@ -10,34 +10,48 @@ function onStart()
 ?>
 ==
 <!DOCTYPE html>
-<html lang="{{ locale }}" class="{{ locale }} no-js" ng-app="site">
+<html lang="en" class="en no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ this.page.title }}</title>
-    <link rel="icon" type="image/svg" href="{{ 'assets/images/favicon.svg' | theme }}"/>
-    {% styles %}
-    <link href="{{ 'assets/stylesheets/site.css' | theme }}" rel="stylesheet">
-    <base href="{{ url_base }}">
-</head>
+        <title>{% if this.page.title %}{{ this.page.title}} &#124; {% endif %}{{ this.theme.site_title }}</title>
 
-<body>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
 
-    {% partial 'api/google-tag-manager' %}
+        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png' | theme }}">
 
-    <div class="container main-content">
-        <div class="row content-text">
-            {% page %}
-        </div>
-    </div>
+        <link href="{{ [
+                '@framework.extras',
+                'assets/sass/site.scss'
+            ] | theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+    <body>
 
-    <script src="{{ 'assets/vendor/modernizr/modernizr.js' | theme }}"></script>
-    <script src="{{ 'assets/javascript/site.vendor.js' | theme }}"></script>
-    <script src="{{ 'assets/javascript/site.js' | theme }}"></script>
+    {% page %}
+
+    <script src="{{ [
+        'assets/vendor/jquery/dist/jquery.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/button.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/carousel.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/popover.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
+        'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
+        '@framework',
+        '@framework.extras',
+        'assets/javascript/site.js'
+    ] | theme }}"></script>
     {% scripts %}
-    {% framework extras %}
 
-</body>
-
+    </body>
 </html>
