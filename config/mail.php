@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'info@vojtasvoboda.cz', 'name' => 'Vojtasvoboda.cz'],
+    'from' => ['address' => env('MAIL_ADDRESS'), 'name' => env('MAIL_NAME')],
 
     /*
     |--------------------------------------------------------------------------

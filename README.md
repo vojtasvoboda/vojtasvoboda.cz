@@ -17,21 +17,9 @@ grunt watch (waiting for file changes)
 
 ## Environment setup
 
-Create file .env from .env.dist - set local database, app key
+Create file .env from .env.dist - set local database, app key.
 
 This file contains all environment variables - database config, app key, environment name, localhost URL etc.
-
-Example file:
-
-```
-APP_ENV=dev
-DATABASE_NAME=vojtasvoboda
-DATABASE_USER=root
-DATABASE_PASSWORD=root
-ENCRYPTION_KEY=your-generated-32byte-string
-ENCRYPTION_CIPHER=rijndael-128
-BASE_URL=http://localhost:8000
-```
 
 ## Debug on
 
