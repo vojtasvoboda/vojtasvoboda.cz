@@ -1,14 +1,5 @@
 description = "Default layout"
 ==
-<?php
-function onStart()
-{
-    $this['locale'] = App::getLocale();
-    $this['is_production'] = App::environment('production');
-    $this['url_base'] = '/';
-}
-?>
-==
 <!DOCTYPE html>
 <html lang="en" class="en no-js">
     <head>
@@ -18,16 +9,14 @@ function onStart()
 
         <title>Programátor webových stránek | Vojta Svoboda</title>
 
-        <meta name="description" content="{{ this.page.meta_description }}">
-        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="description" content="Programátor webových aplikací">
+        <meta name="title" content="Vojta Svoboda">
 
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png' | theme }}">
 
         <link href="{{ [
-                '@framework.extras',
-                'assets/sass/site.scss'
-            ] | theme }}" rel="stylesheet">
-        {% styles %}
+            'assets/sass/site.scss'
+        ] | theme }}" rel="stylesheet">
     </head>
     <body>
 
@@ -36,14 +25,6 @@ function onStart()
     <div class="container">
         {% page %}
     </div>
-
-    <script src="{{ [
-        'assets/vendor/jquery/dist/jquery.js',
-        '@framework',
-        '@framework.extras',
-        'assets/javascript/site.js'
-    ] | theme }}"></script>
-    {% scripts %}
 
     </body>
 </html>
