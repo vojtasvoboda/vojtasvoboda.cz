@@ -11,8 +11,12 @@ description = "Default layout"
 
         <meta name="description" content="Programátor webových aplikací" />
         <meta name="title" content="Vojta Svoboda" />
-        <link rel="icon" type="image/png" href="https://cdn.vojtasvoboda.cz/themes/vojtasvoboda/assets/images/october.png" />
-        <link href="https://cdn.vojtasvoboda.cz/combine/992f4708601e1431cc2c93103957562d-1487193320.css" rel="stylesheet" />
+
+        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png' | theme }}" />
+
+        <link href="{{ [
+            'assets/sass/site.scss'
+        ] | theme }}" rel="stylesheet" />
     </head>
     <body>
 
