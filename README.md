@@ -7,19 +7,16 @@ Site www.vojtasvoboda.cz
 ```
 composer install
 sudo npm install
-cd themes/fortissimoprague/
+cd themes/vojtasvoboda/
 sudo npm install
 bower install
-grunt tasks
-grunt build_dev OR grunt build
-grunt watch (waiting for file changes)
 ```
 
-## Environment setup
+But bower install is not neccessary, because assets/vendor folder is already in Git repository.
 
-Create file .env from .env.dist - set local database, app key.
+## Static variant
 
-This file contains all environment variables - database config, app key, environment name, localhost URL etc.
+There is static (pre-rendered) variant of the website in /static folder.
 
 ## Debug on
 
@@ -33,14 +30,7 @@ return [
 
 and set production to 'dev' in .env file. This /dev/app.php basically overrides /config/app.php file.
 
-## Local database setup
-
-Two way:
-
-- download production database
-- or run command `php artisan october:up` which builds database from migrations and seeds
-
-## Project run
+## Project run on localhost
 
 `php artisan serve` - starts PHP 5.4. built-in server (same as run `php -S localhost:8000`)
 
