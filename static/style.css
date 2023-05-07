@@ -374,7 +374,7 @@ address{margin-bottom:22px;font-style:normal;line-height:1.42857}
 .col-lg-offset-11{margin-left:91.66667%}
 .col-lg-offset-12{margin-left:100%}
 }
- @font-face{font-family:'FontAwesome';src:url("/themes/vojtasvoboda/assets/fonts/FontAwesome/fontawesome-webfont.eot?v=1.0.0");src:url("/themes/vojtasvoboda/assets/fonts/FontAwesome/fontawesome-webfont.eot?#iefix&v=1.0.0") format('embedded-opentype'),url("/themes/vojtasvoboda/assets/fonts/FontAwesome/fontawesome-webfont.woff?v=1.0.0") format('woff'),url("/themes/vojtasvoboda/assets/fonts/FontAwesome/fontawesome-webfont.ttf?v=1.0.0") format('truetype'),url("/themes/vojtasvoboda/assets/fonts/FontAwesome/fontawesome-webfont.svg#fontawesomeregular?v=1.0.0") format('svg');font-weight:normal;font-style:normal}
+ @font-face{font-family:'FontAwesome';src:url("font/fontawesome-webfont.eot?v=1.0.0");src:url("font/fontawesome-webfont.eot?#iefix&v=1.0.0") format('embedded-opentype'),url("font/fontawesome-webfont.woff?v=1.0.0") format('woff'),url("font/fontawesome-webfont.ttf?v=1.0.0") format('truetype'),url("font/fontawesome-webfont.svg#fontawesomeregular?v=1.0.0") format('svg');font-weight:normal;font-style:normal}
  [class^="icon-"],[class*=" icon-"]{font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;*margin-right:0.3em}
 [class^="icon-"]:before,[class*=" icon-"]:before{text-decoration:inherit;display:inline-block;speak:none}
  .icon-large:before{vertical-align:-10%;font-size:1.33333em}
