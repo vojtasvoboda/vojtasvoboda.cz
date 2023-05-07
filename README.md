@@ -14,6 +14,8 @@ bower install
 
 But bower install is not neccessary, because assets/vendor folder is already in Git repository.
 
+There is no need to build assets (by Grunt etc), because assets are build by OctoberCMS, so we just call assets/sass/site.scss in the layout.
+
 ## Static variant
 
 There is static (pre-rendered) variant of the website in /static folder.
